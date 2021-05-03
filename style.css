@@ -1,0 +1,38 @@
+body {
+    background: #6495ED;
+    font-family: sans-serif;
+    padding: 100px;
+  }
+   
+  .dn {
+    padding: 1em;
+    margin: 2em auto;
+    width: 17em;
+    background:#00008B;
+    border-radius: 3px;
+  }
+  
+  label {
+    font-size: 15pt;
+    color: #FFF8DC;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    width: 95%;
+    background:#DCDCDC;
+    margin: 6px 0px;
+    font-size: 10pt;
+    border: 0;
+  }
+  
+  .push {
+    background: #ce0c0c;
+    color: #fff;
+    border: 0;
+    padding: 15px;
+    width:270px;
+  }
+  .h1 { color: #A52A2A; }

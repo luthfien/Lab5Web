@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tugas Form Validasi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function validasiForm() {
+            var nim = document.getElementById("nim").value;
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var saran = document.getElementById("saran").value;
+            if (nim != "" && nama!="" && email !="" && saran !="" ) {
+                return true;
+            }else{
+                alert('Isi Saran Anda Jangan Kosong !');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <center><h1>KIRIM SARAN ANDA DI SINI</h1></center>
+	<div class="dn">
+		<form action="reload.html" method="POST" onSubmit="return validasiForm()">
+            <div>
+                <label>NIM:</label>
+                <input type="text" name="nim" id="nim" />
+            </div>
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<label>Saran:</label>
+				<textarea cols="40" rows="5" name="saran" id="saran"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Kirim" class="push">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
